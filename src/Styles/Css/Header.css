@@ -1,0 +1,128 @@
+.header {
+  background-color: #08AEEA;
+  background-image: linear-gradient(45deg, #08AEEA 0%, #2AF598 100%);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.header .headerContainer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 20px 0 100px 0px;
+}
+.header .headerContainer .headerList {
+  display: flex;
+  gap: 40px;
+}
+.header .headerContainer .headerList .headerListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.header .headerContainer .headerList .headerListItem:hover {
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 20px;
+}
+.header .headerContainer .headerList .headerListItem.active {
+  border: 1px solid #fff;
+  padding: 10px;
+  border-radius: 20px;
+}
+.header .headerContainer .headerTitle {
+  margin-top: 30px;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+.header .headerContainer .headerDesc {
+  margin: 20px 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.header .headerContainer .headerBtn {
+  padding: 10px;
+  color: #fff;
+  font-size: 0.95rem;
+  background: rgba(4, 243, 124, 0.8588235294);
+  text-transform: capitalize;
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s ease;
+  margin: 5px;
+}
+.header .headerContainer .headerBtn:hover {
+  background-color: #fff;
+  color: rgba(4, 243, 124, 0.8588235294);
+  border: 1px solid rgba(4, 243, 124, 0.8588235294);
+}
+.header .headerContainer .headerSearch {
+  width: 100%;
+  max-width: 1024px;
+  height: 30px;
+  background-color: #fff;
+  border: 3px solid #ffbb02;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header .headerContainer .headerSearch .headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .headerContainer .headerSearch .headerSearchItem .headerSearchIcon {
+  color: rgb(134, 134, 134);
+}
+.header .headerContainer .headerSearch .headerSearchItem .dateClick {
+  cursor: pointer;
+}
+.header .headerContainer .headerSearch .headerSearchItem .headerSearchInput {
+  border: none;
+  font-family: "Poppins";
+  outline: none;
+}
+.header .headerContainer .headerSearch .headerSearchItem .headerSearchInput::-moz-placeholder {
+  color: lightgrey;
+}
+.header .headerContainer .headerSearch .headerSearchItem .headerSearchInput:-ms-input-placeholder {
+  color: lightgrey;
+}
+.header .headerContainer .headerSearch .headerSearchItem .headerSearchInput::placeholder {
+  color: lightgrey;
+}
+.header .headerContainer .headerSearch .headerSearchItem .headerSearchText {
+  position: relative;
+  color: lightgrey;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.header .headerContainer .headerSearch .headerSearchItem .option {
+  position: absolute;
+  top: 50px;
+  background: #fff;
+  color: gray;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px -5px rgba(40, 40, 40, 0.56);
+  -webkit-box-shadow: 0px 0px 10px -5px rgba(40, 40, 40, 0.56);
+  -moz-box-shadow: 0px 0px 10px -5px rgba(40, 40, 40, 0.56);
+}
+.header .headerContainer .headerSearch .headerSearchItem .option .optionItems {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.date {
+  position: absolute;
+  top: 45px;
+}
