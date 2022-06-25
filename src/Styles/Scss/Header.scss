@@ -12,6 +12,10 @@
         max-width: 1024px;
         margin: 20px 0 100px 0px;
 
+        &.listMode{
+            margin: 20px 0 20px 0px;
+        }
+
         .headerList{
             display: flex;
             gap: 40px;
@@ -154,6 +158,10 @@
                                 &:hover{
                                     background: #2AF598;
                                     color: #fff;
+                                }
+
+                                &:disabled{
+                                    cursor: not-allowed;
                                 }
                             }
 
