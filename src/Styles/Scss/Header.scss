@@ -6,6 +6,7 @@
     display: flex;
     justify-content:center;
     position: relative;
+    z-index: 4;
 
     .headerContainer{
         width: 100%;
@@ -124,6 +125,7 @@
                     background: #fff;
                     color: gray;
                     border-radius: 5px;
+                    z-index: 2;
                     box-shadow: 0px 0px 10px -5px rgba(40, 40, 40, 0.56);
                     -webkit-box-shadow: 0px 0px 10px -5px rgba(40, 40, 40, 0.56);
                     -moz-box-shadow: 0px 0px 10px -5px rgba(40, 40, 40, 0.56);
@@ -181,4 +183,5 @@
 .date{
     position: absolute;
     top: 45px;
+    z-index: 100;
 }

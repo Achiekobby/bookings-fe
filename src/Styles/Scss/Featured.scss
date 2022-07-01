@@ -22,6 +22,7 @@
         overflow: hidden;
         border-radius: 10px;
         transition: all 0.5s ease-in-out;
+        z-index: 1;
 
         &:after{
             content: "";
@@ -37,8 +38,8 @@
             box-shadow: 0 8px 32px 0 rgba(128,208,199,0.37);
             backdrop-filter: blur( 7.5px );
             -webkit-backdrop-filter: blur( 8.5px );
+            z-index: 2;
             border: 1px solid rgba(128,208,199,0.37);
-            z-index: 1;
             transition: all 0.5s ease-in-out;
         }
 
@@ -50,7 +51,7 @@
         width: 100%;
         position: absolute;
         bottom: 10px;
-        z-index: 2;
+        z-index: 3;
         padding: 0 20px;
         opacity: 1;
         transition: all 0.5s ease;
