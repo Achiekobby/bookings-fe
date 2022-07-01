@@ -11,7 +11,7 @@ import React, { useState } from "react";
 import "../../Styles/Css/Header.css";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
-import { Calendar, DateRange } from "react-date-range";
+import { DateRange } from "react-date-range";
 import { format } from "date-fns/esm";
 
 const Header = ({type}) => {
